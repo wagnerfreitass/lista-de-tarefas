@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+.env
+
+# Angular
+/frontend-tarefas/node_modules/
+frontend-tarefas/.angular/
+frontend-tarefas/.vscode/
+frontend-tarefas/dist/
+frontend-tarefas/.idea/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
