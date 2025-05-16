@@ -1,0 +1,7 @@
+<nav *ngIf="logado">
+  <a routerLink="/tarefas">Tarefas</a>
+  <a routerLink="/alterar-senha">Alterar Senha</a>
+  <a (click)="logout()">Logout</a>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,15 @@
+<div class="tarefas-container">
+  <h2>Lista de Tarefas</h2>
+
+  <form (submit)="adicionarTarefa($event)">
+    <input type="text" [(ngModel)]="novaTarefa" name="novaTarefa" placeholder="Nova tarefa" required>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let tarefa of tarefas">
+      {{ tarefa.titulo }}
+      <button class="deletar-btn" (click)="deletarTarefa(tarefa.id)">Excluir</button>
+    </li>
+  </ul>
+</div>

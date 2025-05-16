@@ -1,0 +1,12 @@
+<div class="cadastro-container">
+  <h2>Cadastro de Novo Usuário</h2>
+
+  <form (submit)="cadastrarUsuario($event)">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+    <input type="password" [(ngModel)]="senha" name="senha" placeholder="Senha" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <p>Já tem uma conta?</p>
+  <a routerLink="/login">Voltar para Login</a>
+</div>

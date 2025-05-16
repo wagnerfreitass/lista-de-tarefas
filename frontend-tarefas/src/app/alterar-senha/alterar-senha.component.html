@@ -1,0 +1,13 @@
+<div class="alterar-senha-container">
+  <h2>Alterar Senha</h2>
+
+  <form (submit)="alterarSenha($event)">
+    <input type="password" [(ngModel)]="senhaAtual" name="senhaAtual" placeholder="Senha Atual" required>
+    <input type="password" [(ngModel)]="novaSenha" name="novaSenha" placeholder="Nova Senha" required>
+    <button type="submit">Alterar Senha</button>
+  </form>
+
+  <div class="voltar-wrapper">
+    <a routerLink="/tarefas" class="voltar-btn">Voltar para Tarefas</a>
+  </div>
+</div>

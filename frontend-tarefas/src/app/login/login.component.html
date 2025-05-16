@@ -1,0 +1,15 @@
+<div class="login-container">
+  <h1 class="login-titulo">Lista de Tarefas</h1>
+  <p class="login-subtitulo">O primeiro passo para a produtividade começa aqui.</p>
+
+  <h2>Login</h2>
+  
+  <form (submit)="fazerLogin($event)">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+    <input type="password" [(ngModel)]="senha" name="senha" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <p>Não tem conta?</p>
+  <button (click)="irParaCadastro()">Cadastrar Novo Usuário</button>
+</div>
